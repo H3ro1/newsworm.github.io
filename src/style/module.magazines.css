@@ -1,0 +1,82 @@
+body {
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: #d1d1c5; /* Fallback color */
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 300ms ease-out 200ms;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    
+}
+  
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+
+
+
+/* Background colors for each section */
+body.viewing-section1 {
+    background: #d1d1c5; /* Red */
+}
+body.viewing-section2 {
+    background: #ad7f34; /* Blue */
+}
+body.viewing-section3 {
+    background: #a27488; /* Yellow */
+}
+body.viewing-section4 {
+    background: #444595; /* Orange */
+}
+body.viewing-section5 {
+    background: #873029; 
+}
+body.viewing-section6 {
+    background: #1e2023;
+}
+html {
+    scroll-snap-type: y mandatory;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+}
+
+section {
+    scroll-snap-stop:always;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+        img{
+            margin: auto;
+            height: 500px;
+
+        }
+        
+  }
+
+ section h1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+
+}
+
